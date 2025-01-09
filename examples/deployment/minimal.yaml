@@ -1,21 +1,23 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: myapp-replicaset
+  name: myapp
   labels:
     app: myapp
-    type: front-end
+    type: backend
+    tier: 1
 spec:
   replicas: 3
   selector:
     matchLabels:
-      type: front-end
+      type: backend
   template:
     metadata:
       name: myapp-pod
       labels:
         app: myapp
-        type: front-end
+        type: backend
+        tier: 1
     spec:
       containers:
       - name: nginx

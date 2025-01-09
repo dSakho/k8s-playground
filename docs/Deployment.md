@@ -5,5 +5,5 @@
 - Create a deployment with replicas: `kubectl create deployment my-dep --image=nginx --replicas=3`
 
 ```shell
-k create -f deployment.yaml
+k create -f minimal.yaml
 ```
