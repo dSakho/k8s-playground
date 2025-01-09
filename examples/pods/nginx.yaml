@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - image: nginx
+    name: nginx
+
+# kubectl --kubeconfig /Users/daoudasakho/Library/Caches/JetBrains/IntelliJIdea2024.3/kubernetes/2fO4NMdN5gZ5B2M5kK4MkZhMGnw/config8654215111997605979.yml --context kind-kind proxy --port=49182
